@@ -1,6 +1,19 @@
-document.getElementById('searchBar').addEventListener('input', function() {
-    console.log('User typed:', this.value);
+const searchBar = document.getElementById('searchBar');
+const books = document.querySelectorAll('#bookList .book');
+
+searchBar.addEventListener('input', function () {
+    const searchText = this.value.toLowerCase();
+
+    books.forEach(function (book) {
+        const text = book.textContent.toLowerCase();
+        if (text.includes(searchText)) {
+            book.style.display = 'block';
+        } else {
+            book.style.display = 'none';
+        }
+    });
 });
+
 function showDetails(title, author, description, imageSrc) {
   document.getElementById("popupTitle").textContent = title;
   document.getElementById("popupAuthor").textContent = author;
@@ -12,6 +25,7 @@ function showDetails(title, author, description, imageSrc) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
 
 
 
