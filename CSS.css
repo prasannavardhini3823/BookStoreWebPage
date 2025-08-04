@@ -3,6 +3,14 @@ body {
   padding: 10px;
   background-color: #f0f4f8;
 }
+#searchBar {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 
 h1 {
   text-align: center;
@@ -82,3 +90,4 @@ footer {
   padding: 10px;
   
 }
+
