@@ -1,4 +1,7 @@
-const searchBar = document.getElementById('searchBar');
+document.getElementById('searchBar').addEventListener('input', function() {
+    console.log('User typed:', this.value);
+});
+ searchBar = document.getElementById('searchBar');
 const books = document.querySelectorAll('#bookList .book');
 
 searchBar.addEventListener('input', function () {
@@ -25,6 +28,7 @@ function showDetails(title, author, description, imageSrc) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
 
 
 
