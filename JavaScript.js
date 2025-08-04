@@ -1,3 +1,6 @@
+document.getElementById('searchBar').addEventListener('input', function() {
+    console.log('User typed:', this.value);
+});
 function showDetails(title, author, description, imageSrc) {
   document.getElementById("popupTitle").textContent = title;
   document.getElementById("popupAuthor").textContent = author;
@@ -9,8 +12,7 @@ function showDetails(title, author, description, imageSrc) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
-document.getElementById('searchBar').addEventListener('input', function() {
-    console.log('User typed:', this.value);
-});
+
+
 
 
