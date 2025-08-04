@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Indian Bookstore</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+  <h1 style="color: darkblue;">📚 Welcome to My Indian Bookstore</h1>
+  <p style="text-align: center;">Explore stories by Indian authors.</p>
+
+  <div class="books-container">
+
+    <div class="book" onclick="showDetails('Wings of Fire', 'A.P.J. Abdul Kalam', 'An inspiring autobiography of India\'s Missile Man.', 'images/wings_of_fire.jpg')">
+      <img src="./wings_of_fire.jpg" alt="Wings of Fire">
+      <h3>Wings of Fire</h3>
+      <p><em>A.P.J. Abdul Kalam</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('The White Tiger', 'Aravind Adiga', 'A story about India\'s class struggle told by a poor driver.', 'images/white_tiger.jpg')">
+      <img src="./wild_tiger.jpg" alt="White Tiger">
+      <h3>The White Tiger</h3>
+      <p><em>Aravind Adiga</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('The Palace of Illusions', 'Chitra Banerjee Divakaruni', 'Mahabharata through Draupadi\'s eyes.', 'images/palace_of_illusions.jpg')">
+      <img src="./palace_of_illusions.jpg" alt="Palace of Illusions">
+      <h3>The Palace of Illusions</h3>
+      <p><em>Chitra B. Divakaruni</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('God of Small Things', 'Arundhati Roy', 'A touching story of family and forbidden love.', 'images/god_of_small_things.jpg')">
+      <img src="./god_of_small_things.jpg" alt="God of Small Things">
+      <h3>God of Small Things</h3>
+      <p><em>Arundhati Roy</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('Train to Pakistan', 'Khushwant Singh', 'A Partition-era story of love and loss.', 'images/train_to_pakistan.jpg')">
+      <img src="./Train_to_Pakistan.jpg" alt="Train to Pakistan">
+      <h3>Train to Pakistan</h3>
+      <p><em>Khushwant Singh</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('Midnight\'s Children', 'Salman Rushdie', 'A magical tale reflecting India\'s independence.', 'images/midnights_children.jpg')">
+      <img src="./midnights_children.jpg" alt="Midnight's Children">
+      <h3>Midnight's Children</h3>
+      <p><em>Salman Rushdie</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('The Guide', 'R.K. Narayan', 'A tourist guide transforms into a spiritual one.', 'images/the_guide.jpg')">
+      <img src="./the_guide.jpg" alt="The Guide">
+      <h3>The Guide</h3>
+      <p><em>R.K. Narayan</em></p>
+    </div>
+
+    <div class="book" onclick="showDetails('2 States', 'Chetan Bhagat', 'A couple from different cultures tries to get married.', 'images/2_states.jpg')">
+      <img src="./2_states.jpg" alt="2 States">
+      <h3>2 States</h3>
+      <p><em>Chetan Bhagat</em></p>
+    </div>
+
+  </div>
+
+  
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span onclick="closePopup()" class="close-btn">&times;</span>
+      <img id="popupImage" src="" alt="Book Image">
+      <h2 id="popupTitle"></h2>
+      <p id="popupAuthor"></p>
+      <p id="popupDescription"></p>
+    </div>
+  </div>
+
+  <footer style="background-color:floralwhite;">
+    <p style="color: black;">&copy; 2025 My Indian Bookstore</p>
+    <a href="https://maps.app.goo.gl/9TeZXjnHGmGduFCZA" target="_top">Visit Us</a> <br>
+    <a href="tel:1234567890">&phone;Contact Us</a>
+    <a href="mailto:myindianbookstore@gmail.com">&#x2709;Mail Us</a>
+  </footer>
+
+  <script src="JavaScript.js"></script>
+</body>
+</html>
