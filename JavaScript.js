@@ -1,40 +1,11 @@
-const books = [
-    "2 States",
-    "Train to Pakistan",
-    "God of Small Things",
-    "Midnight's Children",
-    "Palace of Illusions",
-    "The Guide",
-    "Wings of Fire",
-    "Wild Tiger"
-];
-
+// Search bar functionality: Filters book cards dynamically
 const searchBar = document.getElementById('searchBar');
-const resultsDiv = document.getElementById('results');
-
-searchBar.addEventListener('input', () => {
-    const query = searchBar.value.toLowerCase();
-    resultsDiv.innerHTML = '';
-
-    if (query.trim() === '') return; // If empty, show nothing
-
-    const filteredBooks = books.filter(book => book.toLowerCase().includes(query));
-
-    filteredBooks.forEach(book => {
-        const div = document.createElement('div');
-        div.className = 'book';
-        div.textContent = book;
-        resultsDiv.appendChild(div);
-    });
-});
-
- searchBar = document.getElementById('searchBar');
-const books = document.querySelectorAll('#bookList .book');
+const bookCards = document.querySelectorAll('.books-container .book');
 
 searchBar.addEventListener('input', function () {
     const searchText = this.value.toLowerCase();
 
-    books.forEach(function (book) {
+    bookCards.forEach(function (book) {
         const text = book.textContent.toLowerCase();
         if (text.includes(searchText)) {
             book.style.display = 'block';
@@ -44,17 +15,21 @@ searchBar.addEventListener('input', function () {
     });
 });
 
+// Popup functionality: Show details when clicking on a book
 function showDetails(title, author, description, imageSrc) {
-  document.getElementById("popupTitle").textContent = title;
-  document.getElementById("popupAuthor").textContent = author;
-  document.getElementById("popupDescription").textContent = description;
-  document.getElementById("popupImage").src = imageSrc;
-  document.getElementById("popup").style.display = "flex";
+    document.getElementById("popupTitle").textContent = title;
+    document.getElementById("popupAuthor").textContent = author;
+    document.getElementById("popupDescription").textContent = description;
+    document.getElementById("popupImage").src = imageSrc;
+    document.getElementById("popup").style.display = "flex";
 }
 
+// Close popup when close button is clicked
 function closePopup() {
-  document.getElementById("popup").style.display = "none";
+    document.getElementById("popup").style.display = "none";
 }
+
+
 
 
 
