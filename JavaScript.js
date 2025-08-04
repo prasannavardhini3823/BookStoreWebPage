@@ -1,4 +1,3 @@
-// Search bar functionality: Filters book cards dynamically
 const searchBar = document.getElementById('searchBar');
 const bookCards = document.querySelectorAll('.books-container .book');
 
@@ -15,7 +14,6 @@ searchBar.addEventListener('input', function () {
     });
 });
 
-// Popup functionality: Show details when clicking on a book
 function showDetails(title, author, description, imageSrc) {
     document.getElementById("popupTitle").textContent = title;
     document.getElementById("popupAuthor").textContent = author;
@@ -24,10 +22,10 @@ function showDetails(title, author, description, imageSrc) {
     document.getElementById("popup").style.display = "flex";
 }
 
-// Close popup when close button is clicked
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
 
 
 
