@@ -10,6 +10,13 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.book {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
 
 
 h1 {
@@ -90,4 +97,5 @@ footer {
   padding: 10px;
   
 }
+
 
