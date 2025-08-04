@@ -3,6 +3,10 @@ body {
   padding: 10px;
   background-color: #f0f4f8;
 }
+.container {
+    width: 300px;
+    margin: 50px auto;
+}
 #searchBar {
     width: 300px;
     padding: 10px;
@@ -97,5 +101,6 @@ footer {
   padding: 10px;
   
 }
+
 
 
